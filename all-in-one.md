@@ -263,7 +263,7 @@ Live 系统本身也自带一个安装器, 不过可能和 netinst.iso 提供的
 
 ## 系统级安装
 
-可用 `Ctrl + Alt + t` 快捷键打开终端. 输入 `sudo apt install <软件包名>` 并回车即可安装相应的软件包. 推荐先装 git, build-essential, cmake, 这些是代码和编译相关的工具. 然后可能需要补充一些字体. 中文字体 (`fonts-noto-cjk`) 会随着简体中文的语言选择自动装上 (见上一章), 不用额外操心; 我另外手动装了 `fonts-noto` 和 `fonts-noto-color-emoji` 来补全某些特殊字符和 emoji 的显示, 不装的话也只是一些字符显示乱码, 不影响使用. 要注意的是, 手动添加的字体文件 (比如下面 [yazi + nerd fonts](.#yazi--nerd-fonts) 一节复制到 `~/.local/share/fonts/` 的 .ttf) 需要运行 `fc-cache -fv` 刷新字体缓存才会生效, 可以用 `fc-list | grep -i <关键字>` 检查系统是否已经识别到该字体. 可以装一个 fastfetch 快速查看系统当前信息. 可以再装一个 vim 文本编辑器, 装好直接在命令行输入 `vimtutor` 命令并回车学习其用法; 不想装 vim 只用默认的 nano 编辑器也行. 用 `which` 命令检查是否已安装 wget, curl, unzip, tar, 如果有缺的也同样用 apt 安装即可.
+可用 `Ctrl + Alt + t` 快捷键打开终端. 输入 `sudo apt install <软件包名>` 并回车即可安装相应的软件包. 推荐先装 git, build-essential, cmake, 这些是代码和编译相关的工具. 然后可能需要补充一些字体. 中文字体 (`fonts-noto-cjk`) 会随着简体中文的语言选择自动装上 (见上一章), 不用额外操心; 我另外手动装了 `fonts-noto` 和 `fonts-noto-color-emoji` 来补全某些特殊字符和 emoji 的显示, 不装的话也只是一些字符显示乱码, 不影响使用. 要注意的是, 手动添加的字体文件 (比如下面 [yazi + nerd fonts](#yazi--nerd-fonts) 一节复制到 `~/.local/share/fonts/` 的 .ttf) 需要运行 `fc-cache -fv` 刷新字体缓存才会生效, 可以用 `fc-list | grep -i <关键字>` 检查系统是否已经识别到该字体. 可以装一个 fastfetch 快速查看系统当前信息. 可以再装一个 vim 文本编辑器, 装好直接在命令行输入 `vimtutor` 命令并回车学习其用法; 不想装 vim 只用默认的 nano 编辑器也行. 用 `which` 命令检查是否已安装 wget, curl, unzip, tar, 如果有缺的也同样用 apt 安装即可.
 
 最后要装的是 ibus-rime 输入法, keyd 键盘映射, 以及 ghostty 终端模拟器.
 
