@@ -1,0 +1,8 @@
+#!/usr/bin/bash
+# SPDX-License-Identifier: MIT
+# ~/.local/bin/llmsrv
+export OLLAMA_IGPU_ENABLE=1
+export OLLAMA_FLASH_ATTENTION=1
+nohup ollama serve &>/tmp/ollama.log &
+
+exit 0

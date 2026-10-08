@@ -1,0 +1,5 @@
+#!/bin/bash
+# SPDX-License-Identifier: MIT
+# ~/.local/bin/mute
+exec &>/dev/null
+pactl set-sink-mute @DEFAULT_SINK@ toggle
