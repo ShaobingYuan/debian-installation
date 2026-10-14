@@ -1,0 +1,6 @@
+#!/bin/bash
+# SPDX-License-Identifier: MIT
+# ~/.local/bin/vol-down
+exec &>/dev/null
+idx=$(pactl list short sink-inputs | head -1 | awk '{print $1}')
+[ -z "$idx" ] || pactl set-sink-input-volume "$idx" -5%
